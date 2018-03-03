@@ -21,7 +21,7 @@ const create = (req: Request, res: Response): any => {
 };
 
 const update = (req: Request, res: Response): any => {
-  Property.findOneAndUpdate({_id: req.body._id}, {description: req.body.description}, function(err: any, property: any) {
+  Property.findOneAndUpdate({_id: req.params.id}, {description: req.body.description}, function(err: any, property: any) {
     if (err) console.log(err);
     res.status(200).json({ message: 'Property has been updated' });
   });
