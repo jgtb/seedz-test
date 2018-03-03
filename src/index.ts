@@ -88,6 +88,11 @@ if (process.env.NODE_ENV !== 'production') {
   server.use(jwt({ secret: config.jwtSecret }).unless(unlessPath));
 }
 
+// Default message
+server.get('/', function(req: Request, res: Response) {
+  res.json({"message": 'SEEDZ Test'})
+})
+
 // Default error
 server.use(
   (err: ErrorEventHandler, req: Request, res: Response, next: NextFunction) => {
