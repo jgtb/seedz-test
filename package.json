@@ -4,11 +4,6 @@
   "description": "A simple boilerplate for NodeJS using Typescript projects",
   "main": "index.js",
   "license": "MIT",
-  "author": {
-    "name": "Emerson Luiz",
-    "email": "eluizbr@gmail.com",
-    "url": "https://github.com/eluizbr"
-  },
   "engines": {
     "node": "^8.9.1",
     "npm": "5.5.1"
@@ -55,8 +50,10 @@
     "typescript": "^2.6.1"
   },
   "dependencies": {
+    "@types/chai-http": "^3.0.4",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
+    "chai-http": "^3.0.0",
     "compression": "^1.7.1",
     "cors": "^2.8.4",
     "express": "^4.16.2",
