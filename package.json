@@ -22,6 +22,7 @@
     "test:watch": "export PORT='3001' NODE_ENV='devel' && node_modules/.bin/mocha --opts src/test/mocha.opts --watch"
   },
   "devDependencies": {
+    "@types/chai-http": "^3.0.4",
     "@types/bcryptjs": "^2.4.1",
     "@types/body-parser": "^1.16.8",
     "@types/chai": "^4.0.5",
@@ -50,7 +51,6 @@
     "typescript": "^2.6.1"
   },
   "dependencies": {
-    "@types/chai-http": "^3.0.4",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "chai-http": "^3.0.0",
